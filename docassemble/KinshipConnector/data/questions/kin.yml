@@ -9,7 +9,7 @@ metadata:
   authors:
     - name: Dane W. Henry, Esq.
       organization: Legal Aid of West Virginia, Inc.
-  revision_date: 2023-01-30
+  revision_date: 2023-03-24
 ---
 sections:
   - overview: Overview
@@ -23,6 +23,7 @@ sections:
   - collect: Collect Documents
 ---
 features:
+  javascript: force_lightmode.js
   progress bar: True
   show progress bar percentage: True
   navigation: True
