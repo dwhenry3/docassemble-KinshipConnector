@@ -9,7 +9,7 @@ metadata:
   authors:
     - name: Dane W. Henry, Esq.
       organization: Legal Aid of West Virginia, Inc.
-  revision_date: 2023-03-24
+  revision_date: 2023-09-29
 ---
 sections:
   - overview: Overview
@@ -23,12 +23,12 @@ sections:
   - collect: Collect Documents
 ---
 features:
-  javascript: force_lightmode.js
+  javascript: docassemble.LAWVCommon:data/static/force_lightmode.js
   progress bar: True
   show progress bar percentage: True
   navigation: True
   ## bootstrap theme: bootstrap.min.css
-  css: kin.css
+  css: docassemble.LAWVCommon:data/static/lawv.css
   cache documents: False
 ---
 imports:
@@ -36,14 +36,14 @@ imports:
   - geopy.distance
 ---
 modules:
-  - .progressivedisclosure
+  - docassemble.LAWVCommon.progressivedisclosure
 ---
 include:
   - generic-questions.yml
   - temporary-care-agreement-questions.yml
   - guardianship-questions.yml
   - adoption-questions.yml
-  - common_info.yml
+  - docassemble.LAWVCommon:common_info.yml
 ---
 objects:
   - interviewee: Individual
