@@ -9,7 +9,7 @@ metadata:
   authors:
     - name: Dane W. Henry, Esq.
       organization: Legal Aid of West Virginia, Inc.
-  revision_date: 2023-09-29
+  revision_date: 2025-04-24
 ---
 sections:
   - overview: Overview
@@ -355,11 +355,11 @@ code: |
       # --------------------------
       if bundle[0].parent1.terminated:
         bundle[0].cps_involved = True
-        bundle[0].cps_location = y.parent1.place_of_termination
+        bundle[0].cps_location = bundle[0].parent1.place_of_termination
         bundle[0].cps_outcome = "Substantiated"
       elif not bundle[0].no_second_parent and bundle[0].parent2.terminated:
         bundle[0].cps_involved = True
-        bundle[0].cps_location = y.parent2.place_of_termination
+        bundle[0].cps_location = bundle[0].parent2.place_of_termination
         bundle[0].cps_outcome = "Substantiated"
       if bundle[0].cps_involved:
         bundle[0].cps_allegations
