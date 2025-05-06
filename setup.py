@@ -44,7 +44,7 @@ def find_package_data(where='.', package='', exclude=standard_exclude, exclude_d
     return out
 
 setup(name='docassemble.KinshipConnector',
-      version='1.1',
+      version='1.1.1',
       description=('A docassemble extension to assist clients with educating themselves on the different types of kinship documents and create completed documents once chosen.'),
       long_description="Legal Aid of West Virginia's Kinship Connector.\r\n\r\nThis tool is designed to assist the general public with educating themselves on the different types of kinship arrangements available to them.  Once the user chooses a document to create, the interview will guide the user in entering the information needed to complete either a 1) Temporary Care Agreement, 2) Infant Guardianship, or 3) Adoption packet.  Once completed, these packets will provide instructions to the users on the next steps in their kinship process, including when and where to sign and how to print and submit to the court (if necessary).\r\n\r\nThis project was developed as part of a LSC TIG and made available for reproduction and modification pursuant to grant requirements.",
       long_description_content_type='text/markdown',

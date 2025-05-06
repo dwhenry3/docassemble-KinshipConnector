@@ -2,7 +2,7 @@ metadata:
   authors:
     - name: Dane W. Henry, Esq.
       organization: Legal Aid of West Virginia, Inc.
-  revision_date: 2023-03-01
+  revision_date: 2025-05-05
 ---
 event: reviewguided
 section: reviewguided
@@ -443,7 +443,6 @@ fields:
     code: states_list()
     default: WV
   - Zip: interviewee.address.zip
-  - County: interviewee.address.county
 section: personal
 post: |
   [Restart or exit form](${ url_action('escape_hatch')})
@@ -488,9 +487,6 @@ fields:
     show if: cokin_present
   - Zip: cokin.address.zip
     default: ${ interviewee.address.zip }
-    show if: cokin_present
-  - County: cokin.address.county
-    default: ${ interviewee.address.county }
     show if: cokin_present
 section: personal
 post: |

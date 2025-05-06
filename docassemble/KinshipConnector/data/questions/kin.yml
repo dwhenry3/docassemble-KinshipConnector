@@ -9,7 +9,7 @@ metadata:
   authors:
     - name: Dane W. Henry, Esq.
       organization: Legal Aid of West Virginia, Inc.
-  revision_date: 2025-04-24
+  revision_date: 2025-05-05
 ---
 sections:
   - overview: Overview
@@ -214,11 +214,6 @@ code: |
     setVars()
   interviewee.name.first
 
-  ## County
-  interviewee.address.county = interviewee.address.county.rsplit(" ")[0]
-  interviewee.address.county = interviewee.address.county.capitalize()
-  upper_county = interviewee.address.county.upper()
-
   ## Library
   interviewee.address.geocode()
   cords = (interviewee.address.location.latitude,interviewee.address.location.longitude)
@@ -228,8 +223,14 @@ code: |
       closest = distance
       closest_library = library
 
+  ## County
+  interviewee.address.county = interviewee.address.county.rsplit(" ")[0]
+  interviewee.address.county = interviewee.address.county.capitalize()
+  upper_county = interviewee.address.county.upper()
+
   cokin_present
   if cokin_present:
+    cokin.address.geocode()
     cokin.address.county = cokin.address.county.rsplit(" ")[0]
   minor_list.gather()  
   total_minors = minor_list.number()
