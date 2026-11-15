@@ -4,8 +4,18 @@ metadata:
   short title: |
     Kinship Connector
   description: |
-    Root file for logic of the KIN project.  This file controls logic 
-    flow and importation of other question files.
+    Get information and help preparing paperwork for temporary care agreements,
+    guardianship, or adoption in West Virginia.
+  jurisdiction: NAM-US-US+WV
+  LIST_topics:
+    - ES-03-03-00-00
+  tags:
+    - ES-03-03-00-00
+  can_I_use_this_form: |
+    For relatives who are caring for, or expect to care for, a child in West Virginia.
+    This tool is not for children involved in an abuse and neglect case in court.
+  help_page_url: https://legalaidwv.org/kinship-connector/
+  help_page_title: About Kinship Connector — Legal Aid of West Virginia
   authors:
     - name: Dane W. Henry, Esq.
       organization: Legal Aid of West Virginia, Inc.
